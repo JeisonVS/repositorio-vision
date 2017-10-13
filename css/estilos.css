@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  box-sizing: border-box; }
+
+.container {
+  margin: 0px auto;
+  max-width: 1200px;
+  width: 100%;
+  /*overflow: hidden;*/ }
+
+/*header*/
+header {
+  padding: 0px 40px;
+  background-color: #191712;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden; }
+  header h1 {
+    width: 110px; }
+  header img {
+    float: left;
+    padding-top: 45px;
+    padding-bottom: 49px; }
+  @media (max-width: 640px) {
+    header img {
+      padding: 5px 0px;
+      margin: 10px 0px; } }
+  header .menu-hamburguesa {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+    display: none;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 10px; }
+  @media (max-width: 640px) {
+    header .menu-hamburguesa {
+      display: block;
+      margin: 5px 0px; } }
+  header .menu-hamburguesa:hover {
+    color: #7ebb00; }
+  header span {
+    padding-left: 5px; }
+
+.navegacion {
+  box-sizing: border-box;
+  float: right; }
+  .navegacion ul {
+    list-style: none;
+    padding-left: 0px; }
+  .navegacion li {
+    float: left;
+    /*    display: inline-block;*/ }
+  .navegacion a {
+    display: block;
+    width: fit-content;
+    line-height: 115px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 20px; }
+  .navegacion a:hover, .navegacion .active {
+    color: #7ebb00;
+    border-bottom: 4px solid #7ebb00; }
+
+@media (max-width: 640px) {
+  .navegacion {
+    display: none; } }
+/*header*/
+/*banner*/
+main {
+  clear: both; }
+  main .banner {
+    padding: 215px 50px 0px 50px;
+    background: url("../images/banner.jpg") no-repeat top center;
+    height: 800px;
+    background-size: cover; }
+    main .banner .descripcion {
+      width: 70%;
+      color: white;
+      font-family: 'Open Sans', sans-serif; }
+      main .banner .descripcion p:nth-child(1) {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: lighter; }
+      main .banner .descripcion p:nth-child(2) {
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      @media (max-width: 640px) {
+        main .banner .descripcion p:nth-child(1), main .banner .descripcion p:nth-child(2) {
+          text-align: center;
+          font-size: 40px; }
+        main .banner .descripcion p:nth-child(3) {
+          font-size: 18px;
+          text-align: center; } }
+      main .banner .descripcion .boton_banner {
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 25px 10%;
+        margin: 40px 2%;
+        display: inline-block;
+        font-weight: bold; }
+      main .banner .descripcion .boton_banner:hover {
+        background-color: rgba(0, 0, 0, 0.2); }
+  @media (max-width: 640px) {
+    main .banner {
+      padding: 100px 2%; }
+      main .banner .descripcion {
+        margin: auto;
+        width: 100%; }
+        main .banner .descripcion .boton_banner {
+          display: block;
+          width: 90%;
+          text-align: center;
+          margin: 20px auto; } }
+
+/*fin banner*/
+/*nuetro equipo*/
+.our-team {
+  background-color: #f4f4f4;
+  padding: 100px 5%;
+  /*100 50*/
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden; }
+  .our-team h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #191712; }
+  .our-team .our-team-descripcion {
+    padding: 15px 15% 35px 15%;
+    color: #191712;
+    text-align: center; }
+  .our-team .miembro-equipo {
+    margin: 5px 2px 30px 10px;
+    width: 24%;
+    min-width: 270px;
+    position: relative;
+    float: left; }
+    .our-team .miembro-equipo .nombre-cargo {
+      background-color: #333333;
+      color: white;
+      width: 270px;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 45px 19%;
+      text-transform: uppercase;
+      font-weight: bold; }
+    @media (max-width: 640px) {
+      .our-team .miembro-equipo .nombre-cargo {
+        width: 100%; } }
+  @media (max-width: 640px) {
+    .our-team .miembro-equipo {
+      width: 95%; }
+    .our-team img {
+      width: 100%; }
+    .our-team .nombre-cargo {
+      width: 100%; } }
+  .our-team a {
+    background-color: #333333;
+    border-radius: 100%;
+    border: 3px solid white;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    margin: 5px;
+    top: 380px;
+    text-decoration: none; }
+  .our-team a:hover {
+    background-color: black;
+    cursor: pointer; }
+  .our-team .fa-facebook {
+    padding: 10px 13px;
+    left: 65px; }
+  .our-team .fa-twitter {
+    left: 110px; }
+  .our-team .fa-linkedin {
+    left: 155px; }
+  @media (max-width: 640px) {
+    .our-team a {
+      top: 94%; }
+    .our-team .fa-facebook {
+      left: 30%; }
+    .our-team .fa-twitter {
+      left: 45%; }
+    .our-team .fa-linkedin {
+      left: 60%; } }
+
+/*fin nuestro equipo*/
+/*blog*/
+.blog {
+  font-family: 'Open Sans', sans-serif;
+  margin: 100px 35px 200px 35px;
+  overflow: hidden;
+  padding-right: 1px; }
+  .blog h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px; }
+  .blog p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px; }
+  .blog .blog_entry {
+    margin: 25px 15px 25px 15px;
+    width: 46%;
+    min-width: 570px;
+    overflow: hidden;
+    float: left;
+    position: relative; }
+    .blog .blog_entry img {
+      width: 100%;
+      margin-bottom: 20px; }
+    .blog .blog_entry .fecha {
+      background-color: #333333;
+      text-align: center;
+      width: 70px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      padding: 25px 20px;
+      position: absolute;
+      top: 47%; }
+    .blog .blog_entry .fa {
+      float: right;
+      margin-left: 20px;
+      color: grey;
+      text-decoration: none;
+      font-weight: normal; }
+    .blog .blog_entry h3 {
+      clear: both;
+      margin-top: 40px; }
+    .blog .blog_entry p {
+      text-align: left;
+      clear: both; }
+    .blog .blog_entry a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333333;
+      text-transform: capitalize; }
+    .blog .blog_entry a:hover {
+      color: black;
+      cursor: pointer; }
+  @media (max-width: 640px) {
+    .blog .blog_entry {
+      width: 90%;
+      min-width: 100%;
+      margin: 25px 2px; }
+      .blog .blog_entry .fecha {
+        top: 25%; }
+    .blog a {
+      margin-bottom: 40px; } }
+
+@media (max-width: 640px) {
+  .blog {
+    margin-bottom: 100px; } }
+/*fin blog*/
+/*footer*/
+footer p {
+  border-top: 1px solid grey;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  padding: 25px 15px;
+  margin: 5px 10px; }
+
+/*fin footer*/
+
+/*# sourceMappingURL=estilos.css.map */
